@@ -1,0 +1,5 @@
+package com.books.security;
+
+public class CustomUserDetailsService {
+
+}

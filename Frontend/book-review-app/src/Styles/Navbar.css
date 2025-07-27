@@ -1,0 +1,180 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #7F55B1;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-center {
+  position: relative;
+  width: 60%;
+  max-width: 400px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem; 
+  border-radius: 2rem;
+  border: none;
+  background-color: #FFE1E0;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9B7EBD;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 2px solid white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: #7F55B1;
+}
+
+.nav-btn.filled {
+  background-color: #F49BAB;
+  border-color: #F49BAB;
+  color: black;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.6rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FFE1E0;
+}
+
+.profile-btn {
+  background-color: #F49BAB;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background-color: white;
+  color: black;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.profile-avatar {
+  background-color: #9B7EBD;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 1rem auto 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-info {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.view-profile-btn {
+  width: 100%;
+  background-color: #FFE1E0;
+  color: #7F55B1;
+  border: none;
+  padding: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.view-profile-btn:hover {
+  background-color: #F49BAB;
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.profile-links a,
+.profile-links button {
+  text-decoration: none;
+  color: #7F55B1;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-links a:hover,
+.profile-links button:hover {
+  background-color: #FFE1E0;
+}

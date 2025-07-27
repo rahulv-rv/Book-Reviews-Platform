@@ -1,0 +1,103 @@
+.book-details-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, sans-serif;  
+}
+
+.book-details-container h1{
+    margin: 20px 0;
+}
+
+.book-details-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.book-image {
+  width: 260px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.book-info {
+  flex: 1;
+}
+
+.book-details-container h1 {
+  font-size: 1.8rem;
+  color: #7F55B1;
+  margin-bottom: 0.8rem;
+}
+
+.book-info p {
+  margin: 8px 0;
+  color: #1a1a1a;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+.action-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.buy-now, .add-to-cart {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buy-now {
+  background-color: #F49BAB;
+}
+
+.buy-now:hover {
+  background-color: #FFE1E0;
+}
+
+.add-to-cart {
+  background-color: transparent;
+  border: 2px solid #F49BAB;
+}
+
+.add-to-cart:hover {
+  background-color: #FFE1E0;
+  border: 2px solid #FFE1E0;;
+}
+
+.price {
+  font-weight: bold;
+  color: #2C3E50;
+  font-size: 1rem;
+}
+
+.mrp {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #888;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.discount {
+  margin-left: 10px;
+  color: green;
+  font-weight: 500;
+  font-size: 0.85rem;
+}

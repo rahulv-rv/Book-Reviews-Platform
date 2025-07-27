@@ -1,0 +1,5 @@
+package com.books.DTO;
+
+public class ReviewRequest {
+
+}

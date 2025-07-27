@@ -1,0 +1,111 @@
+.subject-page {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.subject-page h2 {
+  color: #7F55B1;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.subject-book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Amazon-style horizontal book card */
+.subject-book-card {
+  display: flex;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.subject-book-card:hover {
+  transform: translateY(-4px);
+}
+
+.book-img {
+  width: 130px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 1.2rem;
+}
+
+.book-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-info h3 {
+  color: #9B7EBD;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.book-info .author {
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.book-info .genre {
+  font-size: 0.85rem;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.book-info .rating {
+  font-size: 0.85rem;
+  color: #E67E22;
+  margin-bottom: 6px;
+}
+
+.review-count {
+  color: #1a1a1a;
+  font-size: 0.8rem;
+}
+
+.book-info .price {
+  font-weight: bold;
+  color: #2C3E50;
+  font-size: 1rem;
+}
+
+.book-info .mrp {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #888;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.book-info .discount {
+  margin-left: 10px;
+  color: green;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.view-details{
+  display: inline-block;
+  text-align: center;
+  padding: 6px;
+  height: 30px;
+  width: 100px;
+  background: #F49BAB;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}

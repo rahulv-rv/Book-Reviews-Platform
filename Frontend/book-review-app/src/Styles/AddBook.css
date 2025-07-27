@@ -1,0 +1,77 @@
+.add-book-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #eee9e9a2;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(127, 85, 177, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.add-book-container h2 {
+  text-align: center;
+  color: #7f55b1;
+  margin-bottom: 25px;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.book-form label {
+  font-weight: 600;
+  color: #7f55b1;
+}
+
+.book-form input,
+.book-form textarea,
+.book-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+.book-form input:focus,
+.book-form textarea:focus {
+  border-color: #9b7ebd;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.genre-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.book-form button {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #7f55b1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-form button:hover {
+  background-color: #9b7ebd;
+}

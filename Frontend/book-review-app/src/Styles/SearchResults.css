@@ -1,0 +1,88 @@
+.search-results-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.search-results-container h2 {
+  color: #7F55B1;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.book-card {
+  background-color: #e4dfdf9e;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(127, 85, 177, 0.2);
+}
+
+.book-card img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background-color: #fff;
+}
+
+.book-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.book-info p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.book-info p strong {
+  color: #7F55B1;
+}
+
+/* Scrollbar Styling */
+.book-grid::-webkit-scrollbar {
+  width: 8px;
+}
+.book-grid::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+.book-grid::-webkit-scrollbar-thumb {
+  background: #9B7EBD;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .book-card img {
+    width: 100px;
+    height: 140px;
+  }
+}

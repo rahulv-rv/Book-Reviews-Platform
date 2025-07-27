@@ -1,0 +1,5 @@
+package com.books.config;
+
+public class AppConfig {
+
+}

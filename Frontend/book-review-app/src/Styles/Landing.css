@@ -1,0 +1,128 @@
+/* Color Palette */
+:root {
+  --primary: #7F55B1;
+  --accent1: #9B7EBD;
+  --accent2: #F49BAB;
+  --light: #FFE1E0;
+  --text-dark: #1a1a1a;
+  --white: #ffffff;
+}
+
+/* Base Styling */
+.landing-page {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, var(--primary), var(--accent1));
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content h1 span {
+  color: var(--accent2);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  background-color: var(--accent2);
+  color: var(--text-dark);
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: var(--light);
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 4rem 0 2rem;
+  color: var(--primary);
+}
+
+/* Features Section */
+.features {
+  background-color: var(--light);
+  padding: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: var(--white);
+  border: 2px solid var(--accent1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(127, 85, 177, 0.2);
+}
+
+.feature-card h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+/* Book Section */
+.book-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+/* About Section */
+.about-section {
+  padding: 3rem 2rem;
+  background-color: var(--accent1);
+  color: var(--white);
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0.5rem auto;
+  font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}

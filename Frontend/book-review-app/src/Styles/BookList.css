@@ -1,0 +1,142 @@
+.book-list-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+.hero-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  color: #1C1C1C;
+}
+
+.hero-title span {
+  color: #7F55B1;
+}
+
+/* ===== Subject Section ===== */
+.subject-section {
+  margin-bottom: 3rem;
+  padding: 1rem 0;
+}
+
+.subject-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.subject-header h2 {
+  color: #9B7EBD;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subject-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* ===== Buttons (Arrow + View All) ===== */
+.subject-controls button {
+  background: #F49BAB;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+/* ===== Carousel Row ===== */
+.book-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.book-carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.book-carousel::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+/* ===== Book Card ===== */
+.book-card {
+  min-width: 240px;
+  max-width: 260px;
+  flex: 0 0 auto;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+  color: #1C1C1C;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== Book Image ===== */
+.book-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 0.8rem;
+  border-radius: 6px;
+}
+
+/* ===== Book Title and Info ===== */
+.book-card h3 {
+  color: #2C3E50;
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  height: 45px;
+  overflow: hidden;
+}
+
+.book-card p {
+  font-size: 0.9rem;
+  margin: 6px 0;
+  color: #333;
+}
+
+/* ===== Details Button ===== */
+.book-card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #F49BAB;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+  align-self: stretch;
+}
+
+.book-card button:hover {
+  background-color: #FFE1E0;
+}
+
+.rating span {
+  color: #FFD700; /* gold stars */
+  font-size: 1rem;
+}
