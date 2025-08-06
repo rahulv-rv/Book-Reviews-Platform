@@ -126,3 +126,37 @@
   padding: 1rem 0;
   font-size: 0.9rem;
 }
+
+.cta-login-section {
+  background-color: var(--accent1);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cta-login-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  /* color: #333; */
+  color: var(--white);
+}
+
+.cta-login-section p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: var(--white);
+}
+
+.cta-login-section .cta-btn {
+  background-color: var(--accent2);
+  color: #000;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-login-section .cta-btn:hover {
+  background-color: var(--light);
+}

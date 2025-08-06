@@ -93,6 +93,21 @@ const Landing = () => {
         </p>
       </section>
 
+      {/* Call to Action Section */}
+      <section className="cta-login-section">
+        <h2>Ready to Contribute?</h2>
+        <p>
+          To add a new book or share your review with the community, please <strong>log in to your account</strong>.
+          This helps us keep your contributions connected to your profile.
+        </p>
+        <button
+          className="cta-btn"
+          onClick={() => window.location.href = '/login'}
+        >
+          Log In to Get Started
+        </button>
+      </section>
+
       {/* Footer */}
       <footer className="footer">
         <p>© 2025 Book Reviews. All rights reserved.</p>
